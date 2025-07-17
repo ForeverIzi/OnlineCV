@@ -117,6 +117,111 @@ h1 {
     font-weight: 300;
 }
 
+.content-section {
+    background-color: var(--dark-bg);
+    padding: 4rem 0;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.section-title {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary);
+    margin-top: 0.5rem;
+}
+
+.education-item {
+    margin-bottom: 2rem;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.3rem;
+}
+
+.education-item h3 {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.education-period {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.education-major {
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 0.95rem;
+    margin: 0 0 0.8rem;
+    font-style: italic;
+}
+
+.education-description {
+    color: var(--text-muted);
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.experience-item {
+    margin-bottom: 2rem;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.3rem;
+}
+
+.experience-period {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.experience-company {
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 0.95rem;
+    margin: 0 0 0.8rem;
+}
+
+.experience-description {
+    color: var(--text-muted);
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 1.5rem 0;
+    opacity: 0.5;
+}
+
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
@@ -134,5 +239,16 @@ h1 {
     .contact-info {
         flex-direction: column;
         gap: 1rem;
+    }
+    .education-header, .experience-header {
+        flex-direction: column;
+    }
+    
+    .education-period, .experience-period {
+        margin-top: 0.3rem;
+    }
+    
+    .content-container {
+        padding: 0 1.5rem;
     }
 }
