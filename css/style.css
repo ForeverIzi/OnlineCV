@@ -1,0 +1,138 @@
+:root {
+    --primary: #3db8a8;
+    --dark-bg: #2e2e2e;
+    --panel-bg: #383838;
+    --text-light: #ccc;
+    --text-description: #888;
+    --border-color: #444;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-light);
+    background-color: var(--dark-bg);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-panel {
+    background-color: var(--panel-bg);
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary);
+}
+
+.right-panel {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2.8rem;
+    line-height: 1.2;
+}
+
+.first-name {
+    color: var(--text-light);
+    font-weight: 300;
+    display: block;
+}
+
+.last-name {
+    color: var(--primary);
+    font-weight: 700;
+    display: block;
+}
+
+.description {
+    color: var(--text-description);
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 0.5rem 0 2rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 1;
+    color: var(--primary);
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.contact-item {
+    min-width: 200px;
+}
+
+.contact-item strong {
+    display: block;
+    color: var(--text-muted);
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.contact-item span {
+    color: var(--text-light);
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .left-panel {
+        width: 100%;
+        padding: 2rem 0;
+    }
+    
+    .right-panel {
+        padding: 2rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
