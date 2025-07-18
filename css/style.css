@@ -219,7 +219,7 @@ h1 {
     margin: 0;
 }
 
-/* ESTILOS PARA EXPERIÊNCIA */
+/* EXPERIENCE SECTION */
 .experience-section {
     margin-bottom: var(--section-spacing);
 }
@@ -276,7 +276,7 @@ h1 {
     font-size: 1.5rem;
 }
 
-/* DIVISÓRIAS */
+/* DIVIDERS */
 .divider {
     height: 1px;
     background: var(--border-color);
