@@ -22,5 +22,8 @@ In my case, the problem I decided to tackle is building my online resume, since 
 - Responsive layout implemented ✅
 - Added comments in the style.css because I was starting to feel lost ✅
 - Experience and Education section done ✅
-- Fun animations and sections scrolling (in progress)⚠️
-- The last section has not been implemented yet. ❌
+- New section with my Knowladge added ✅
+- New hover animations for the cards added ✅
+- More animations and sections scrollings (in progress)⚠️
+- Last section (in progress)⚠️
+- Added script folder and file, but they're still empty. (in progress)⚠️

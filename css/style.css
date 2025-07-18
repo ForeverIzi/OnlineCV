@@ -285,6 +285,87 @@ h1 {
 }
 
 
+/* KNOWLADGE SECTION */
+.knowledge-section {
+    margin-top: 4rem;
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.skills-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.skills-category {
+    flex: 1 1 300px;
+    min-width: 250px;
+    max-width: 100%;
+    background: rgba(61, 184, 168, 0.05);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}
+
+.skills-title {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.skills-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
+.knowledge-section .section-title {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.knowledge-section .section-title::after {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+
+/* ANIMATIONS */
+
+
+.skills-category, .education-item, .experience-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-category:hover, .education-item:hover, .experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
@@ -326,12 +407,24 @@ h1 {
         flex-direction: column;
     }
     
-    .education-item,
-    .experience-item {
+    .education-item,.experience-item {
         padding: 1.5rem;
+    }
+
+    .experience-item {
+        padding: 1.5rem
     }
 
     .last-name {
         font-size: 2.5rem;
     }
+    .skills-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .skills-category {
+        min-width: 100%;
+    }
+
 }
