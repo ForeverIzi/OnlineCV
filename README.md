@@ -20,3 +20,7 @@ In my case, the problem I decided to tackle is building my online resume, since 
 
 - Basic structure completed ✅  
 - Responsive layout implemented ✅
+- Added comments in the style.css because I was starting to feel lost ✅
+- Experience and Education section done ✅
+- Fun animations and sections scrolling (in progress)⚠️
+- The last section has not been implemented yet. ❌
