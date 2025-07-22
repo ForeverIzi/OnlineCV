@@ -28,4 +28,4 @@ In my case, the problem I decided to tackle is building my online resume, since 
 - New animations and finally some JavaScript used ✅
 - More animations and sections scrollings (in progress)⚠️
 - Last section (in progress)⚠️
- ~~Added script folder and file, but they're still empty.~~ (They are no longer empty!!)✅
+- ~~Added script folder and file, but they're still empty.~~ (They are no longer empty!!)✅
