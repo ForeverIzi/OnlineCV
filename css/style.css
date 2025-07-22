@@ -219,6 +219,139 @@ h1 {
     margin: 0;
 }
 
+/* COURSE SECTION */
+.course-section {
+    margin-bottom: var(--section-spacing);
+}
+
+.course-item {
+    margin-bottom: var(--item-spacing);
+    padding: 2rem; 
+    background: rgba(61, 184, 168, 0.05); 
+    border-radius: 8px;
+}
+
+.course-header {
+    margin-bottom: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.8rem;
+    flex-direction: column;
+}
+
+.course-major {
+    color: var(--text-light); 
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.course-major:hover {
+    opacity: 1;
+    color: var(--primary);
+    transform: translateX(5px);
+}
+
+.course-item.active .course-major {
+    color: var(--primary);
+}
+
+.course-item.active .course-major:hover {
+    color: var(--primary); 
+}
+
+.course-item.active .course-major .course-toggle {
+    transform: rotate(180deg);
+}
+
+.course-item.active .course-major:hover .course-toggle {
+    transform: rotate(180deg);
+}
+
+
+
+.course-description {
+    margin-top: 1rem;
+    line-height: var(--line-height);
+    font-weight: 300;
+    color: var(--text-light);
+}
+
+.course-description h3 {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.course-toggle {
+    transform: transform 0.3 ease;
+    margin-left: 10px;
+}
+
+
+.course-details {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.course-details p {
+    margin: 0;
+}
+
+.course-item.active .course-details {
+    max-height: 30px;
+    opacity: 1;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+.course-item.active .couse-toggle {
+    transform: rotate(180deg);
+}
+
+.course-item h3 {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.course-description a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.course-description a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.certificates-links {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--border-radius);
+    color: var(--primary);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: (61, 184, 168, 0.05);
+    transition: all 0.3 ease;
+}
+
+.certificates-links:hover {
+    background-color: rgba(61, 184, 168, 0.5);
+    text-decoration: none;
+}
+
 /* EXPERIENCE SECTION */
 .experience-section {
     margin-bottom: var(--section-spacing);
@@ -354,11 +487,11 @@ h1 {
 
 /* ANIMATIONS */
 
-.skills-category, .education-item, .experience-item {
+.skills-category, .education-item, .experience-item, .course-item {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skills-category:hover, .education-item:hover, .experience-item:hover,  {
+.skills-category:hover, .education-item:hover, .experience-item:hover, .course-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
