@@ -505,6 +505,69 @@ h1 {
     box-shadow: 0 10px 20px rgba(61, 184, 168,0.5);
 }
 
+.tech-stack-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 3rem 0;
+    padding: 1rem 0;
+}
+
+.tech-stack-mask {
+    width: 100%;
+    overflow: hidden;
+}
+
+.tech-stack-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+    will-change: transform;
+    padding: 0 20px;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+    padding: 0 15px;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.tech-stack-container:hover .tech-stack-track {
+    animation-play-state: paused;
+}
+
+.tech-item i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.tech-item span {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    white-space: nowrap;
+}
+
+.tech-item:hover i {
+    transform: scale(1.1);
+    filter: drop-shadow(0 2px 4px rgba(61, 184, 168, 0.3));
+}
+
+
+
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
@@ -565,5 +628,22 @@ h1 {
     .skills-category {
         min-width: 100%;
     }
-
+    .tech-stack-track {
+        gap: 1.5rem;
+        padding: 0 1rem;
+        animation-duration: 80s !important;
+    }
+    .tech-item {
+        min-width: 80px;
+    }
+    
+    .tech-item i {
+        font-size: 2rem;
+    }
+    
+    @keyframes scroll {
+        100% {
+            transform: translateX(calc(-50% - 0.75rem));
+        }
+    }
 }
