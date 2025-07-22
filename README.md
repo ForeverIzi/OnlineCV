@@ -26,6 +26,7 @@ In my case, the problem I decided to tackle is building my online resume, since 
 - New hover animations for the cards added ✅
 - New extra-curricular course section added ✅
 - New animations and finally some JavaScript used ✅
+- New carrousel stack animation added ✅
 - More animations and sections scrollings (in progress)⚠️
 - Last section (in progress)⚠️
 - ~~Added script folder and file, but they're still empty.~~ (They are no longer empty!!)✅
