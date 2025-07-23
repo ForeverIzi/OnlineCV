@@ -740,7 +740,6 @@ h1 {
     color: var(--primary-dark);
 }
 
-
 .light-mode .first-name {
     color: var(--text-dark);
 }
@@ -965,4 +964,8 @@ h1 {
     #profile {
         margin-top: 80px;
     }
+ 
+    .light-mode .main-nav a, .light-mode .main-nav i{
+        color: var(--text-light);
+}
 }
