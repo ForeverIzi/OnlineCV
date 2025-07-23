@@ -13,6 +13,7 @@ In my case, the problem I decided to tackle is building my online resume, since 
 
 - HTML5  
 - CSS3
+- JavaScript
 
 ---
 
@@ -27,6 +28,9 @@ In my case, the problem I decided to tackle is building my online resume, since 
 - New extra-curricular course section added ✅
 - New animations and finally some JavaScript used ✅
 - New carrousel stack animation added ✅
-- More animations and sections scrollings (in progress)⚠️
-- Last section (in progress)⚠️
+- ~~sections scrollings~~ (Section Scrolling Added With NavBar)✅
 - ~~Added script folder and file, but they're still empty.~~ (They are no longer empty!!)✅
+- NavBar responsive (in progress) ⚠️
+- White Theme and English Version (in progress) ⚠️
+- Last section (in progress)⚠️
+
