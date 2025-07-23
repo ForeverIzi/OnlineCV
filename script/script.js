@@ -50,6 +50,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    const experienceSection = document.getElementById('mid-section');
+    const experienceStart = experienceSection.offsetTop;
+    const experienceEnd = experienceStart + experienceSection.offsetHeight;
     
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -60,6 +64,12 @@ document.addEventListener('DOMContentLoaded', function() {
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
+            const scrollPosition = window.scrollY + 150;
+            
+ 
+            if (scrollPosition >= sectionTop && scrollPosition < (sectionTop + sectionHeight)) {
+                current = section.getAttribute('id');
+            }
             
             if (pageYOffset >= (sectionTop - 150)) {
                 current = section.getAttribute('id');
@@ -103,7 +113,8 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// TRANSLATION 
+/* TRANSLATION */ 
+
 let currentLang = 'pt'; 
 
 function toggleLanguage() {
@@ -129,3 +140,31 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.lang-toggle').addEventListener('click', toggleLanguage);
     applyTranslations();
 });
+
+/* LIGHT THEME */ 
+
+function toggleTheme() {
+    document.body.classList.toggle('light-mode');
+    const icon = document.querySelector('.theme-toggle i');
+    
+    if (document.body.classList.contains('light-mode')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+        localStorage.setItem('theme', 'light');
+    } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+        localStorage.setItem('theme', 'dark');
+    }
+}
+
+function checkTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        document.body.classList.add('light-mode');
+        document.querySelector('.theme-toggle i').classList.remove('fa-moon');
+        document.querySelector('.theme-toggle i').classList.add('fa-sun');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', checkTheme);

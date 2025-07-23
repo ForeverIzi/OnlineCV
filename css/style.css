@@ -1,11 +1,19 @@
 :root {
-    /* DEFAULT COLORS */
+    /* DEFAULT COLORS DARK MODE */
     --primary: #3db8a8;
     --dark-bg: #2e2e2e;
     --panel-bg: #383838;
     --text-light: #ccc;
     --text-description: #888;
     --border-color: #444;
+
+    /* DEFAULT COLORS LIGHT MODE*/
+    --light-bg: #f5f5f5;
+    --light-panel: #EDEADE;
+    --text-dark: #333;
+    --text-muted: #666;
+    --border-light: #e0e0e0;
+    --primary-dark: #2a9d8e;
 
     /* DEFAULT SPACEMENTS */
     --column-gap: 80px;  
@@ -14,6 +22,7 @@
     --paragraph-spacing: 1.5rem; 
     --line-height: 1.8;  
     --border-radius: 8px;
+
 }
 
 html, body {
@@ -26,6 +35,7 @@ html, body {
     overflow-x: hidden;
     width: 100%;
     max-width: 100%;
+
 }
 
 .main-container {
@@ -422,7 +432,7 @@ h1 {
 .knowledge-section {
     margin-top: 4rem;
     padding: 3rem 0;
-    border-top: 1px solid var(--border-color);
+    padding-top: 5rem;
 }
 
 .skills-container {
@@ -556,6 +566,7 @@ h1 {
 
 .nav-link.active {
     color: var(--primary);
+    position: relative;
 }
 
 .nav-link.active::after {
@@ -639,12 +650,12 @@ h1 {
 /* ANIMATIONS */
 
 .skills-category, .education-item, .experience-item, .course-item {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skills-category:hover, .education-item:hover, .experience-item:hover, .course-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 #profile {
@@ -685,6 +696,129 @@ h1 {
     100% {
         transform: translateX(-50%);
     }
+}
+
+/* LIGHT MODE THEME */
+
+.light-mode {
+    --primary: #2a9d8e;            
+    --background: var(--light-bg);
+    --panel-background: var(--light-panel);
+    --text-color: var(--text-dark);
+    --text-secondary: var(--text-muted);
+    --border-color: var(--border-light);
+
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+}
+
+.light-mode .main-header{
+    background-color: rgba(237, 234, 222, 0.5);
+}
+
+.light-mode .left-panel {
+    background-color: var(--light-panel);
+}
+.light-mode .main-nav a, .light-mode .main-nav i{
+    color: var(--text-dark);
+}
+
+.light-mode .skills-category, .light-mode .education-item, .light-mode .experience-item, .light-mode .course-item {
+    background-color: var(--light-panel) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.light-mode .contact-info, .light-mode .divider {
+    border-color: var(--border-light);
+}
+
+.light-mode .section-title::after {
+    background-color: var(--primary-dark);
+}
+
+.light-mode .icon-btn:hover, .light-mode .nav-link:hover {
+    color: var(--primary-dark);
+}
+
+
+.light-mode .first-name {
+    color: var(--text-dark);
+}
+
+.light-mode .last-name {
+  color: var(--primary-dark); 
+}
+
+.light-mode .description, .light-mode .contact-item strong, .light-mode .contact-item span{
+    color: var(--text-dark);
+}
+
+.light-mode #profile {
+    box-shadow: 0 10px 20px rgba(39, 155, 137, 0.5);
+}
+
+.light-mode .social-icons a {
+    color: var(--text-dark);
+}
+
+.light-mode .social-icons a:hover {
+    color: var(--primary-dark);
+}
+
+.light-mode #mid-section {
+    background: var(--light-bg);
+}
+
+.light-mode .education-item h3, .light-mode .education-description{
+    color: var(--text-dark);
+}
+
+.light-mode .education-major {
+    color: var(--primary-dark);
+}
+
+.light-mode .experience-description, .light-mode h3 {
+    color: var(--text-dark);
+}
+
+.light-mode .experience-company {
+    color: var(--primary-dark);
+}
+
+.light-mode .course-item p {
+    color: var(--text-dark);
+}
+
+.light-mode .course-item p:hover {
+    color: var(--primary-dark);
+}
+
+.light-mode .tech-stack-track span {
+    color: var(--text-dark);
+}
+
+.light-mode .divider{
+    background: #000000;
+}
+
+.light-mode .tech-item {
+    color: var(--text-dark);
+}
+
+.light-mode .knowledge-section{
+    border-top: none;
+}
+
+.light-mode .contact-info{
+    border-top: 1px solid var(--border-color);
+}
+
+.light-mode .skills-list li::before {
+    color: var(--primary-dark);
+}
+
+.light-mode .skills-category h3 {
+    color: var(--primary-dark);
 }
 
 @media (max-width: 768px) {
@@ -832,6 +966,3 @@ h1 {
         margin-top: 80px;
     }
 }
-
-
-
