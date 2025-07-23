@@ -102,3 +102,30 @@ document.querySelectorAll('.nav-link').forEach(link => {
         }
     });
 });
+
+// TRANSLATION 
+let currentLang = 'pt'; 
+
+function toggleLanguage() {
+    currentLang = currentLang === 'pt' ? 'en' : 'pt';
+    applyTranslations();
+    localStorage.setItem('resumeLanguage', currentLang);
+}
+
+function applyTranslations() {
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        element.textContent = translations[currentLang][key];
+    });
+  
+    document.querySelector('.lang-toggle i').className = 
+    currentLang === 'pt' ? 'fas fa-language' : 'fas fa-language';
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('resumeLanguage');
+    if (savedLang) currentLang = savedLang;
+  
+    document.querySelector('.lang-toggle').addEventListener('click', toggleLanguage);
+    applyTranslations();
+});

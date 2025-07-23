@@ -17,9 +17,9 @@
              
         <nav class="main-nav">
             <ul class="nav-list">
-                <li><a href="#home" class="nav-link">INÍCIO</a></li>
-                <li><a href="#mid-section" class="nav-link">EXPERIÊNCIA</a></li>
-                <li><a href="#stacks" class="nav-link">CONHECIMENTOS</a></li>
+                <li><a href="#home" class="nav-link" data-translate="home">INÍCIO</a></li>
+                <li><a href="#mid-section" class="nav-link" data-translate="mid-section">EXPERIÊNCIA</a></li>
+                <li><a href="#stacks" class="nav-link" data-translate="stacks">CONHECIMENTOS</a></li>
             </ul>
             <div class="nav-icons">
                 <button class="icon-btn lang-toggle" aria-label="Change language">
@@ -43,8 +43,8 @@
                     
                     <header class="header">
                         <h1>
-                            <span class="first-name">Davi</span>
-                            <span class="last-name">José de Moura</span>
+                            <span class="first-name" data-translate="name">Davi</span>
+                            <span class="last-name" data-translate="last-name">José de Moura</span>
                         </h1>
                         <p class="description">Técnico de Operações e Desenvolvedor Full-Stack</p>
                         
@@ -56,15 +56,15 @@
                     
             <footer class="contact-info">
                 <div class="contact-item">
-                    <strong>Endereço</strong>
-                    <span>Rio de Janeiro - RJ</span>
+                    <strong data-translate="adress">Endereço</strong>
+                    <span data-translate="state">Rio de Janeiro - RJ</span>
                 </div>
                 <div class="contact-item">
-                    <strong>Telefone</strong>
+                    <strong data-translate="phone">Telefone</strong>
                     <span>(21) 97910-7947</span>
                 </div>
                 <div class="contact-item">
-                    <strong>Email</strong>
+                    <strong data-translate="email">Email</strong>
                     <span>davisjmcontato@gmail.com</span>
                 </div>
             </footer>
@@ -76,15 +76,15 @@
                     <!-- LEFT SECTION -->
                     <div class="left-column">
                         <section class="education-section">
-                            <h2 class="section-title">Educação</h2>
+                            <h2 class="section-title" data-translate="education">Educação</h2>
                             
                             <div class="education-item">
                                 <div class="education-header">
-                                    <h3>Universidade Estácio de Sá</h3>
+                                    <h3 data-translate="university-name">Universidade Estácio de Sá</h3>
                                     <span class="education-period">2019-2023</span>
                                 </div>
-                                <p class="education-major">Sistemas de Informação</p>
-                                <p class="education-description">
+                                <p class="education-major" data-translate="university-course">Sistemas de Informação</p>
+                                <p class="education-description" data-translate="university-description">
                                     Graduação em TI com foco em desenvolvimento de sistemas e gestão de projetos.
                                 </p>
                             </div>
@@ -93,26 +93,26 @@
                             
                             <div class="education-item">
                                 <div class="education-header">
-                                    <h3>Escola Técnica do Rio de Janeiro - ETERJ</h3>
+                                    <h3 data-translate="school-name">Escola Técnica do Rio de Janeiro - ETERJ</h3>
                                     <span class="education-period">2016-2018</span>
                                 </div>
-                                <p class="education-major">Ensino médio técnico em informática</p>
-                                <p class="education-description">
+                                <p class="education-major" data-translate="school-course">Ensino médio técnico em informática</p>
+                                <p class="education-description" data-translate="school-description">
                                     Formação técnica integrada ao ensino médio com foco no desenvolvimento de sistemas.
                                 </p>
                             </div>
                         </section>
 
                         <section class="course-section">
-                            <h2 class="section-title">Cursos Extracurriculares</h2>
+                            <h2 class="section-title" data-translate="extra-course">Cursos Extracurriculares</h2>
 
                             <div class="course-item">
                                 <div class="course-header" onclick="toggleCourse(this)">
                                    
-                                <p class="course-major">Deep-Learning Prático com Tensor Flow e Python <i class="fas fa-chevron-down course-toggle"></i></p>
+                                <p class="course-major" data-translate="course1">Deep-Learning Prático com Tensor Flow e Python <i class="fas fa-chevron-down course-toggle"></i></p>
                                     <div class="course-details">
                                         <p class="course-description">
-                                            <a class="certificates-links" href="assets/Deep-Learning-Pratico.pdf" target="_blank">
+                                            <a class="certificates-links" href="assets/Deep-Learning-Pratico.pdf" target="_blank" data-translate="show-certificate">
                                                 <i class="fas fa-file-pdf"></i> Ver Certificado
                                             </a>
                                         </p>
@@ -125,10 +125,10 @@
                             <div class="course-item">
                                 <div class="course-header" onclick="toggleCourse(this)">
                                    
-                                <p class="course-major">Processamento de Linguagem Natural com Python<i class="fas fa-chevron-down course-toggle"></i></p>
+                                <p class="course-major" data-translate="course2">Processamento de Linguagem Natural com Python<i class="fas fa-chevron-down course-toggle"></i></p>
                                     <div class="course-details">
                                         <p class="course-description">
-                                            <a class="certificates-links" href="assets/Processamento-de-Linguagem-Natural-com-Deep-Learning.pdf" target="_blank">
+                                            <a class="certificates-links" href="assets/Processamento-de-Linguagem-Natural-com-Deep-Learning.pdf" target="_blank" data-translate="show-certificate">
                                                 <i class="fas fa-file-pdf"></i> Ver Certificado
                                             </a>
                                         </p>
@@ -141,10 +141,10 @@
                             <div class="course-item">
                                 <div class="course-header" onclick="toggleCourse(this)">
                                    
-                                <p class="course-major">SQL para Data Science<i class="fas fa-chevron-down course-toggle"></i></p>
+                                <p class="course-major" data-translate="course3">SQL para Data Science<i class="fas fa-chevron-down course-toggle"></i></p>
                                     <div class="course-details">
                                         <p class="course-description">
-                                            <a class="certificates-links" href="assets/SQL-DataScience.pdf" target="_blank">
+                                            <a class="certificates-links" href="assets/SQL-DataScience.pdf" target="_blank" data-translate="show-certificate">
                                                 <i class="fas fa-file-pdf"></i> Ver Certificado
                                             </a>
                                         </p>
@@ -157,10 +157,10 @@
                             <div class="course-item">
                                 <div class="course-header" onclick="toggleCourse(this)">
                                    
-                                <p class="course-major">Pentaho Data Integration<i class="fas fa-chevron-down course-toggle"></i></p>
+                                <p class="course-major" data-translate="course4">Pentaho Data Integration<i class="fas fa-chevron-down course-toggle"></i></p>
                                     <div class="course-details">
                                         <p class="course-description">
-                                            <a class="certificates-links" href="assets/Pentaho-Data-Integration-ETL.pdf" target="_blank">
+                                            <a class="certificates-links" href="assets/Pentaho-Data-Integration-ETL.pdf" target="_blank" data-translate="show-certificate">
                                                 <i class="fas fa-file-pdf"></i> Ver Certificado
                                             </a>
                                         </p>
@@ -173,10 +173,10 @@
                             <div class="course-item">
                                 <div class="course-header" onclick="toggleCourse(this)">
                                    
-                                <p class="course-major">Desenvolvimento de jogos 2D com Unity e C#<i class="fas fa-chevron-down course-toggle"></i></p>
+                                <p class="course-major" data-translate="course5">Desenvolvimento de jogos 2D com Unity e C#<i class="fas fa-chevron-down course-toggle"></i></p>
                                     <div class="course-details">
                                         <p class="course-description">
-                                            <a class="certificates-links" href="assets/Jogos2D-Unity.pdf" target="_blank">
+                                            <a class="certificates-links" href="assets/Jogos2D-Unity.pdf" target="_blank" data-translate="show-certificate">
                                                 <i class="fas fa-file-pdf"></i> Ver Certificado
                                             </a>
                                         </p>
@@ -190,24 +190,24 @@
                     <!-- RIGHT SECTION -->
                     <div class="right-column">
                         <section class="experience-section">
-                            <h2 class="section-title">Experiência Profissional</h2>
+                            <h2 class="section-title" data-translate="experience-title">Experiência Profissional</h2>
                             
                             <div class="experience-item">
                                 <div class="experience-header">
-                                    <h3>Técnico de Operações ANTT</h3>
-                                    <span class="experience-period">Jun 2025 - Presente</span>
+                                    <h3 data-translate="experience-operation-tec">Técnico de Operações ANTT</h3>
+                                    <span class="experience-period" data-translate="experience-operation-tec-period">Jun 2025 - Presente</span>
                                 </div>
-                                <p class="experience-company">ANTT - Agência Nacional de Transportes Terrestres</p>
-                                <p class="experience-description">
+                                <p class="experience-company" data-translate="experience-operation-tec-company">ANTT - Agência Nacional de Transportes Terrestres</p>
+                                <p class="experience-description" data-translate="experience-operation-tec-description1">
                                     Prestação de atendimento Nível 2 (N2) aos colaboradores no estado do Rio de Janeiro
                                 </p>
-                                <p class="experience-description">
+                                <p class="experience-description" data-translate="experience-operation-tec-description2">
                                     Foco na identificação e soluções de eficientes para os problemas técnicos.
                                 </p>
-                                <p class="experience-description"> 
+                                <p class="experience-description" data-translate="experience-operation-tec-description3"> 
                                     Garantia na estabilidade e funcionamento dos serviços de TI da empresa.
                                 </p>
-                                <p class="experience-description"> 
+                                <p class="experience-description" data-translate="experience-operation-tec-description4"> 
                                     Manter o servidor DHCP ativo e funcional, além de ingressar novas máquinas no domínio,
                                     assegurando que estejam corretamente configuradas ao ambiente corporativo.
                                 </p>
@@ -217,17 +217,17 @@
 
                             <div class="experience-item">
                                 <div class="experience-header">
-                                    <h3>Desenvolvedor e Pesquisador</h3>
-                                    <span class="experience-period">Nov 2022 - Jan 2025</span>
+                                    <h3 data-translate="experience-fiocruzdev-title">Desenvolvedor e Pesquisador</h3>
+                                    <span class="experience-period" data-translate="experience-fiocruzdev-period">Nov 2022 - Jan 2025</span>
                                 </div>
-                                <p class="experience-company">FIOCRUZ - Laboratório de Comunicação Celular</p>
-                                <p class="experience-description">
+                                <p class="experience-company" data-translate="experience-fiocruzdev-company">FIOCRUZ - Laboratório de Comunicação Celular</p>
+                                <p class="experience-description" data-translate="experience-fiocruzdev-description1">
                                     Desenvolvimento de um software de análise qualitativa em Python.
                                 </p>
-                                <p class="experience-description">
+                                <p class="experience-description" data-translate="experience-fiocruzdev-description2">
                                     Suporte na criação de Scripts automatizados em Python para os testes de 'Screening Virtual de Células'.
                                 </p>
-                                <p class="experience-description">
+                                <p class="experience-description" data-translate="experience-fiocruzdev-description3">
                                     Manutenção de máquinas, softwares e equipamentos de informática dentro do laboratório.
                                 </p>
                             </div>
@@ -236,24 +236,24 @@
 
                             <div class="experience-item">
                                 <div class="experience-header">
-                                    <h3>Desenvolvedor Freelancer</h3>
-                                    <span class="experience-period">Set 2023 - Fev 2024</span>
+                                    <h3 data-translate="experience-newhorizon-title">Desenvolvedor Freelancer</h3>
+                                    <span class="experience-period" data-translate="experience-newhorizon-period">Set 2023 - Fev 2024</span>
                                 </div>
-                                <p class="experience-company">Projeto Novo Horizonte Transportes</p>
-                                <p class="experience-description">
+                                <p class="experience-company" data-translate="experience-newhorizon-company">Projeto Novo Horizonte Transportes</p>
+                                <p class="experience-description" data-translate="experience-newhorizon-description1">
                                     Desenvolvimento de um Software mobile utilizando React Native e Node.JS.
                                 </p>
-                                <p class="experience-description">
+                                <p class="experience-description" data-translate="experience-newhorizon-description2">
                                     Implementar todo o processo de cadastro, edição e remoção de motoristas, veículos e clientes.
                                 </p>
-                                <p class="experience-description">
+                                <p class="experience-description" data-translate="experience-newhorizon-description3">
                                     Gerenciar a fila de motoristas, incluindo a remoção da fila, alteração de posição, solicitação de viagens por parte do cliente 
                                     e aceitação ou rejeição das viagens pelo administrador, utilizando estado global com React Context API.
                                 </p>
-                                <p class="experience-description">
+                                <p class="experience-description" data-translate="experience-newhorizon-description4">
                                     Realizar requisições assíncronas utilizando Axios e gerenciar formulários com React Hook Form.
                                 </p>
-                                <p class="experience-description">
+                                <p class="experience-description" data-translate="experience-newhorizon-description5">
                                     Desenvolver uma integração com a interface web para que os administradores possam gerenciar os motoristas
                                 </p>
                             </div>
@@ -262,20 +262,20 @@
 
                             <div class="experience-item">
                                 <div class="experience-header">
-                                    <h3>Desenvolvedor Fullstack Freelancer</h3>
-                                    <span class="experience-period">Jul 2021 - Ago 2021</span>
+                                    <h3 data-translate="experience-supermarketdev-title">Desenvolvedor Fullstack Freelancer</h3>
+                                    <span class="experience-period" data-translate="experience-supermarketdev-period">Jul 2021 - Ago 2021</span>
                                 </div>
-                                <p class="experience-company">Projeto Rede de Super Mercados</p>
-                                <p class="experience-description">
+                                <p class="experience-company" data-translate="experience-supermarketdev-company">Projeto Rede de Super Mercados</p>
+                                <p class="experience-description" data-translate="experience-supermarketdev-description1">
                                     Desenvolvimento Full Stack de um sistema eficiente para uma rede de super mercados, utilizando Electron, Node.JS e MYSQL.
                                 </p>
-                                <p class="experience-description">
+                                <p class="experience-description" data-translate="experience-supermarketdev-description2">
                                     Implementar operações de CRUD para os administradores poderem gerenciar os produtos.
                                 </p>
-                                <p class="experience-description">
+                                <p class="experience-description" data-translate="experience-supermarketdev-description3">
                                     Desenvolvimento de filtragem por nome, faixa de preço, validade entre outros critérios.
                                 </p>
-                                <p class="experience-description">
+                                <p class="experience-description" data-translate="experience-supermarketdev-description4">
                                     Desenvolver o painel administrativo, permitindo que o gerente possa cancelar e gerenciar determinadas vendas. 
                                 </p>
                             </div>
@@ -285,7 +285,7 @@
             </div>
         </section>
         <section id="stacks" class="knowledge-section">
-            <h2 class="section-title">HABILIDADES E CONHECIMENTOS</h2>
+            <h2 class="section-title" data-translate="knowledge-stacks">HABILIDADES E CONHECIMENTOS</h2>
 
             <!-- CARROUSEL ANIMATION -->
             <div class="tech-stack-carousel">
@@ -367,39 +367,39 @@
             <div class="skills-container">
                 <!-- TECHNICAL SKILLS -->
                 <div class="skills-category">
-                    <h3 class="skills-title">
+                    <h3 class="skills-title" data-translate="knowledge-stacks-abilities-title">
                         <i class="fas fa-code"></i> Habilidades Técnicas
                     </h3>
                     <ul class="skills-list">
-                        <li>Desenvolvimento Full-Stack (React, Node.js, Python)</li>
-                        <li>Banco de Dados (SQL, MongoDB)</li>
-                        <li>Levantamento de Requisitos</li>
-                        <li>Técnico de Suporte e resolução de erros</li>
-                        <li>Redes aplicada, cabeamento estruturado, Windows Server</li>
+                        <li data-translate="knowledge-stacks-abilities-description1">Desenvolvimento Full-Stack (React, Node.js, Python)</li>
+                        <li data-translate="knowledge-stacks-abilities-description2">Banco de Dados (SQL, MongoDB)</li>
+                        <li data-translate="knowledge-stacks-abilities-description3">Levantamento de Requisitos</li>
+                        <li data-translate="knowledge-stacks-abilities-description4">Técnico de Suporte e resolução de erros</li>
+                        <li data-translate="knowledge-stacks-abilities-description5">Redes aplicada, cabeamento estruturado, Windows Server</li>
                     </ul>
                 </div>
                 
                 <!-- SKILLS -->
                 <div class="skills-category">
-                    <h3 class="skills-title">
+                    <h3 class="skills-title" data-translate="knowledge-stacks-professional-title">
                         <i class="fas fa-users"></i> Habilidades Profissionais
                     </h3>
                     <ul class="skills-list">
-                        <li>Resolução de Problemas e Pensamento Crítico</li>
-                        <li>Trabalho em Equipe</li>
-                        <li>Documentação Técnica</li>
-                        <li>Facilidade de Comunicação com o Cliente</li>
-                        <li>Facilidade de Entender e Identificar Problemas</li>
+                        <li data-translate="knowledge-stacks-professional-description1">Resolução de Problemas e Pensamento Crítico</li>
+                        <li data-translate="knowledge-stacks-professional-description2">Trabalho em Equipe</li>
+                        <li data-translate="knowledge-stacks-professional-description3">Documentação Técnica</li>
+                        <li data-translate="knowledge-stacks-professional-description4">Facilidade de Comunicação com o Cliente</li>
+                        <li data-translate="knowledge-stacks-professional-description5">Facilidade de Entender e Identificar Problemas</li>
                     </ul>
                     
                 </div>
                 
                 <!-- CERTIFICATIONS -->
                 <div class="skills-category">
-                    <h3 class="skills-title">
+                    <h3 class="skills-title" data-translate="knowledge-stacks-certification-title">
                         <i class="fas fa-certificate"></i> Certificações
                     </h3>
-                    <ul class="skills-list">
+                    <ul class="skills-list" data-translate="knowledge-stacks-professional-description1">
                         <h3>Work in Progress</h3>
                     </ul>
                 </div>
@@ -408,4 +408,5 @@
     </div>
 </body>
 <script src="script/script.js"></script>
+<script src="script/translation.js"></script>
 </html>

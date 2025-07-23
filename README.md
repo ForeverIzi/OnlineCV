@@ -22,15 +22,14 @@ In my case, the problem I decided to tackle is building my online resume, since 
 - Basic structure completed ✅  
 - Responsive layout implemented ✅
 - Added comments in the style.css because I was starting to feel lost ✅
-- Experience and Education section done ✅
-- New section with my Knowladge added ✅
-- New hover animations for the cards added ✅
-- New extra-curricular course section added ✅
+- Experience and Education section done!! ✅
+- New hover animations for the cards added!! ✅
+- New extra-curricular course section added!! ✅
 - New animations and finally some JavaScript used ✅
-- New carrousel stack animation added ✅
+- New carrousel stack animation added!! ✅
 - ~~sections scrollings~~ (Section Scrolling Added With NavBar)✅
 - ~~Added script folder and file, but they're still empty.~~ (They are no longer empty!!)✅
-- NavBar Responsive (With different style for mobile) ✅
-- White Theme and English Version (in progress) ⚠️
-- Last section (in progress)⚠️
+- NavBar Responsive (With different style for mobile)✅
+- Translation tab is now working!! ✅
+- White Theme (in progress) ⚠️
 
