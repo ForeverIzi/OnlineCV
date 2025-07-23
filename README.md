@@ -30,7 +30,7 @@ In my case, the problem I decided to tackle is building my online resume, since 
 - New carrousel stack animation added ✅
 - ~~sections scrollings~~ (Section Scrolling Added With NavBar)✅
 - ~~Added script folder and file, but they're still empty.~~ (They are no longer empty!!)✅
-- NavBar responsive (in progress) ⚠️
+- NavBar Responsive (With different style for mobile) ✅
 - White Theme and English Version (in progress) ⚠️
 - Last section (in progress)⚠️
 

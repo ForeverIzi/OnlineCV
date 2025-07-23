@@ -74,3 +74,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+/* MOBILE MENU */
+
+const menuToggle = document.querySelector('.mobile-menu-toggle');
+const mainNav = document.querySelector('.main-nav');
+
+menuToggle.addEventListener('click', function() {
+    mainNav.classList.toggle('active');
+    
+    const icon = this.querySelector('i');
+    if (mainNav.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+    } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+    }
+});
+
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+        if (window.innerWidth <= 768) {
+            mainNav.classList.remove('active');
+            menuToggle.querySelector('i').classList.remove('fa-times');
+            menuToggle.querySelector('i').classList.add('fa-bars');
+        }
+    });
+});
