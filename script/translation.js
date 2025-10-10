@@ -8,7 +8,7 @@ const translations = {
         // Personal Info
         "name": "Davi",
         "last-name": "José de Moura",
-        "description": "Técnico de Operações e Desenvolvedor Full-Stack",
+        "description": "Analista de Produção e Desenvolvedor Full-Stack",
         
         // Contact Info
         "adress": "Endereço",
@@ -96,7 +96,7 @@ const translations = {
         // Personal Info
         "name": "Davi",
         "last-name": "José de Moura",
-        "description": "Operations Technician and Full-Stack Developer",
+        "description": "Production Analyst and Full-Stack Developer",
         
         // Contact Info
         "adress": "Address",

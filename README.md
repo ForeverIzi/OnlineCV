@@ -36,4 +36,4 @@ In my case, the problem I decided to tackle is building my online resume, since 
 - NavBar Responsive (With different style for mobile)✅
 - Translation tab is now working!! ✅
 - White Theme is now working!! ✅
-
+- Fixed a bug where my job title wasn't translating ✅
