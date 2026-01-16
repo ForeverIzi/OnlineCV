@@ -35,6 +35,22 @@ const translations = {
         "show-certificate": "Ver Certificado",
         
         // Experience
+
+        "experience-production-analyst": "Production Analyst",
+        "experience-production-analyst-period": "Oct 2025 - Present",
+        "experience-production-analyst-company": "TOPPEN - PeopleWare",
+        "experience-production-analyst-description1": "Direct involvement in production environments, performing monitoring, operational support, and handling incidents and requests, with a focus on system availability and stability.",
+        "experience-production-analyst-description2": "Experience in diagnosing and resolving issues, working closely with clients and technical teams.",
+        "experience-production-analyst-description3": "Development of Shell and Python scripts aimed at automating and optimizing processes in production environments."
+        
+        "experience-supermarketdev-title": "Desenvolvedor Fullstack Freelancer",
+        "experience-supermarketdev-period": "Jul 2021 - Ago 2021",
+        "experience-supermarketdev-company": "Projeto Rede de Super Mercados",
+        "experience-supermarketdev-description1": "Desenvolvimento Full Stack de um sistema eficiente para uma rede de super mercados, utilizando Electron, Node.JS e MYSQL.",
+        "experience-supermarketdev-description2": "Implementar operações de CRUD para os administradores poderem gerenciar os produtos.",
+        "experience-supermarketdev-description3": "Desenvolvimento de filtragem por nome, faixa de preço, validade entre outros critérios.",
+        "experience-supermarketdev-description4": "Desenvolver o painel administrativo, permitindo que o gerente possa cancelar e gerenciar determinadas vendas.",
+        
         "experience-title": "Experiência Profissional",
         "experience-operation-tec": "Técnico de Operações ANTT",
         "experience-operation-tec-period": "Jun 2025 - Presente",
