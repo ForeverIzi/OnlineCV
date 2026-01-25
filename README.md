@@ -4,6 +4,8 @@ This is my online CV, created as part of the **Casulo Tecnológico** project, wh
 
 In my case, the problem I decided to tackle is building my online resume, since I've been procrastinating on that for quite a while.
 
+I uploaded it to Vercel so you can check it out: https://davimoura.vercel.app/
+
 ### Notes ‼️
 
 - I'm committing from the point where the first section was already done, because i forgot to create the Git repository at the beginning of the project. I only remembered when i was about to start the second section with my professional experience.
